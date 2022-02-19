@@ -8,6 +8,8 @@ import {
   faCoffee,
   faCheese,
 } from "@fortawesome/free-solid-svg-icons";
+// import '../index.css';
+
 
 const Icon = ({ nama }) => {
   if (nama === "Makanan")
@@ -41,7 +43,7 @@ export default class ListCategori extends Component {
   }
 
   render() {
-    //console.log("categories : ", this.state.categories);
+    
     const { categories } = this.state;
     const { changeCategory, categoriDipilih } = this.props;
     return (
@@ -56,9 +58,8 @@ export default class ListCategori extends Component {
               <ListGroup.Item
                 key={category.id}
                 onClick={() => changeCategory(category.nama)}
-                className={
-                  categoriDipilih === category.nama && "category-aktif"
-                }
+                className={categoriDipilih === category.nama && "category-aktif"}
+               style={ {cursor: 'pointer'}}
               >
                 <h5>
                   <Icon nama={category.nama} /> {category.nama}
@@ -66,6 +67,7 @@ export default class ListCategori extends Component {
               </ListGroup.Item>
             ))}
         </ListGroup>
+   
       </Col>
     );
   }

@@ -10,9 +10,10 @@ body {
 .navbar {
   background-color: #36349b;
 }
-.category-aktif{
+.category-aktif {
   background-color: #36349b;
   color: white;
+  cursor: pointer;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
