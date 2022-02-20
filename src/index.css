@@ -15,6 +15,9 @@ body {
   color: white;
   cursor: pointer;
 }
+.btn-primary {
+  background-color: #36349b;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
